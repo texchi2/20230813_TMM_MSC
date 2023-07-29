@@ -10,6 +10,28 @@ ON AUGUST 13-14, 2023, AT 09:00 AM, SUNDAY-MONDAY
 VENUE: CONFERENCE HALL OF CARRO EDEG HOTEL, HARGEISA
 
 Welcome to the 2023 MSC website.
-You could download the program agenda at:
 
-[TMM_SLN_tikzposter_2023Aug__portrait_agenda___TMM_Conference_final.pdf] (2023_TMM_Conference_agenda.pdf)
+Program at a Glance:
+
+(Tentative. Updated on July 29, 2023)
+
+<embed 
+  type="application/pdf" 
+  src="TMM_SLN_tikzposter_2023Aug__portrait_agenda___TMM_Conference_final.pdf"
+  width="100%" 
+  height="900px"
+  zoom="130%"
+>
+
+
+You could download the program agenda below:
+
+
+<style>
+iframe {
+  width: 70%;
+}
+</style>
+
+  <iframe src="TMM_SLN_tikzposter_2023Aug__portrait_agenda___TMM_Conference_final.pdf" width="50%" height="200px">
+  </iframe>
