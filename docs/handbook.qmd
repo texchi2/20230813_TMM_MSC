@@ -1,0 +1,17 @@
+---
+title: "Handbook of 2023MSC"
+format: html
+---
+
+## PDF Handbook
+
+
+<embed 
+  type="application/pdf" 
+  src="TMM_SLN_Handbook_Medical_Conference_2023August_TMM_conference_.pdf"
+  width="100%" 
+  height="1000px"
+  zoom="130%"
+>
+
+
