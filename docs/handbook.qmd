@@ -16,62 +16,6 @@ format: html
 
 
 
-## 
-Speaker's keynote slides:  (password protected)
-<form id="passwordForm">
-    <label>Enter password: </label>
-    <input type="password" id="passwordInput"> 
-    <button type="submit">Submit</button>
-  </form>
-  
-  
-  
-  <div id="protectedContent" style="display:none">
-    
-    (Ordered by alphabetics)
 
-<a href="slides/DrAbdirahim_maxillofacial_gunshot.pptx" target="_blank" rel="noopener noreferrer">
-Dr. Abdirahim Uurcade's Maxillofacial Care for Gunshot Patients in Somaliland
-</a>
-
-
-<a href="slides/DrChen_20230813_AcuteTreatmentIschemicStrokeTaiwan.pptx" target="_blank" rel="noopener noreferrer">
-Dr. Chen's Acute Treatment of Ischemic Stroke in Taiwan
-</a>
-
-
-  </div>
-
-##
-
-  <script>
-  
-const passwordForm = document.getElementById('passwordForm');
-const passwordInput = document.getElementById('passwordInput');
-const protectedContent = document.getElementById('protectedContent');
-
-passwordForm.addEventListener('submit', event => {
-
-  event.preventDefault();
-  
-  if(passwordInput.value === '0813') {
-    // Show protected content
-    document.getElementById('protectedContent').style.display = 'block';
-
-    // Find all links 
-    const links = document.querySelectorAll('#protectedContent a');
-
-  // Add click handler
-  links.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    window.open(link.href, '_blank');
-    });
-  });
-} else {
-    alert('Incorrect password');
-  }
-
-});
-  </script>
+**Conference <a href="keynotes.html">keynotes</a> of 2023MSC** is coming soon.
 
