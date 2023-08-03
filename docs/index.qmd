@@ -7,7 +7,8 @@ format: html
 
 ### A MULTI-SPECIALTY CONFERENCE ###
 
-Welcome to the 2023 MSC website <p id="date"></p>
+Welcome to the 2023 MSC website
+
 
 We provide information about the upcoming conference on **Collaborating for Better Health: A Multi-Specialty Conference <a href="https://m.facebook.com/story.php?story_fbid=pfbid0GW6vxSWAnPsC8nnvBzZjmRswTJdKEpDSM77wYmjNFaZKJfB1XQem2JNqNnWN3AhWl&id=100094220689116&mibextid=qC1gEa">#2023MSC</a>**. This conference is a joint initiative of **Taipei Municipal Wanfang Hospital** and **Hargeisa Group Hospital**, and aims to promote knowledge exchange and collaboration among health professionals from different specialties and regions.
 
@@ -20,7 +21,8 @@ The conference will be held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM,
 2) If you are also a speaker at the conference, please also submit your **CV and abstract** to the Conference Secretariat by email: texchi2@gmail.com
 
 
-Current Statistics for Registered Participants:
+Current Statistics for Registered Participants: <p id="date"></p>
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE)
@@ -85,17 +87,17 @@ ggplot(data_count, aes(x="", y=n, fill=`Specialty.in.Medicine`)) +
 
 
 
-TAIPEI MUNICIPAL WANFANG HOSPITAL VERSUS HARGEISA GROUP HOSPITAL
-
-ON AUGUST 13-14, 2023, AT 09:00 AM, SUNDAY-MONDAY
-
-VENUE: CONFERENCE HALL OF CARRO EDEG HOTEL, HARGEISA
 
 
 **Conference <a href="handbook.html">Handbook</a> of 2023MSC**
   
-This website is Updated on 31 July, 2023
-(Powered by github)
+This website is hosted and maintained by Taiwan Medical Mission, a humanitarian non-profit organization.
+We are dedicated to providing medical aid and empowering healthcare professionals internationally.
+
+Copyright ***Taiwan Medical Mission in the Republic of Somaliland*** ©2022-2023. All rights reserved.
+
+This site was last updated on 3 August, 2023.
+(It is built and hosted on ***GitHub Pages***, allowing collaborative development and version control of the content and code.)
 
 <script>
 document.getElementById("date").innerHTML = Date();
