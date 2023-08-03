@@ -17,6 +17,52 @@ The conference will be held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM,
 
 2) If you are also a speaker at the conference, please also submit your **CV and abstract** to the Conference Secretariat by email: texchi2@gmail.com
 
+
+Current Statistics for Registered Participants:
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE)
+```
+
+```{r, message=FALSE, echo=FALSE}
+
+# Install and load necessary libraries; for presenting a pie chart of a statistics of conference registration
+#install.packages("googlesheets4")
+#install.packages("tidyverse")
+#library(googlesheets4)
+library(tidyverse)
+library(dplyr)
+
+## Read data from Google Sheet
+#msc2023_participants <- read_sheet("https://docs.google.com/spreadsheets/d/16w-_RyZ7PgLvNTTeujzUJ7R-okNa30GmQfXK9omp8OI/edit")
+
+# Read data from CSV file
+msc2023_participants <- read.csv("2023MSC_form_Registration (Responses) - Form Responses 1.csv")
+
+
+# Count the number of occurrences of each specialty
+data_count <- msc2023_participants %>% count(`Specialty.in.Medicine`)
+
+# Create pie chart with percentage labels and counts
+ggplot(data_count, aes(x="", y=n, fill=`Specialty.in.Medicine`)) +
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y", start=0) +
+  theme_void() +
+  ggtitle("Specialty in Medicine") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  scale_fill_discrete(name="Specialty") +
+  geom_text(aes(label=paste0(round(n/sum(n)*100), "% (", n, ")")), position=position_stack(vjust=0.5))
+  
+# Create pie chart using ggplot2 from msc2023_participants dataset directly
+#ggplot(msc2023_participants, aes(x="", y=<column containing values>, fill="Specialty in Medicine")) +
+#  geom_bar(width = 1, stat = "identity") +
+#  coord_polar("y", start=0) +
+#  theme_void()
+
+
+
+```
+
+
 3) Program at a Glance: 
 (<a href="TMM_SLN_tikzposter_2023August_portrait_agenda__TMM_Conference_.pdf" target="_blank" rel="noopener noreferrer" class="button"> Download Agenda
 </a>)
