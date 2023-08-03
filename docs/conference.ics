@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:2023MSC Conference - Day 1
+DESCRIPTION:2023 COLLABORATING FOR BETTER HEALTH: A MULTI-SPECIALTY CONFERENCE TAIPEI MUNICIPAL WANFANG HOSPITAL VERSUS HARGEISA GROUP HOSPITAL
+Topic at a Glance:
+Opening Ceremony, History of Hemodialysis in Somaliland, Organ Transplantation in Wan Fan Hospital, Treatment of Acute Ischemic Stroke in Taiwan, Incidence and Distribution of Cancer in Somaliland, Common Thyroid Disorders in Somaliland, Common Diseases in Otolaryngology (ENT) and WFH ENT Training Program, Maxillofacial Care for Gunshot Patients in Somaliland, The Current State of Neurosurgery in Somaliland, Panel Discussion of Head and Neck Surgeons
+LOCATION:In the Conference Hall of Carro Edeg Hotel, Hargeisa, Somaliland; Map: https://maps.app.goo.gl/8snk1wrqidtd1dkP9?g_st=ic
+DTSTART;TZID=Africa/Nairobi:20230813T090000
+DTEND;TZID=Africa/Nairobi:20230813T120000
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2023MSC Conference - Day 2
+DESCRIPTION:
+2023 COLLABORATING FOR BETTER HEALTH: A MULTI-SPECIALTY CONFERENCE TAIPEI MUNICIPAL WANFANG HOSPITAL VERSUS HARGEISA GROUP HOSPITAL
+Topic at a Glance:
+VIP Remarks, VIP Remarks, Forensic Medicine in Somaliland, Panel Discussion of Medical Investigators, Orthopedic Care for Gunshot Patients in Somaliland, Management of Trauma Patient in Taiwan Emergency Department, Panel Discussion of Trauma Team, Tackling Non-communicable Diseases in Somaliland, Medical Education and Internship Training in Somaliland
+LOCATION:In the Conference Hall of Carro Edeg Hotel, Hargeisa, Somaliland; Map: https://maps.app.goo.gl/8snk1wrqidtd1dkP9?g_st=ic
+DTSTART;TZID=Africa/Nairobi:20230814T090000
+DTEND;TZID=Africa/Nairobi:20230814T120000
+END:VEVENT
+END:VCALENDAR

@@ -12,7 +12,12 @@ Welcome to the 2023 MSC website
 
 We provide information about the upcoming conference on **Collaborating for Better Health: A Multi-Specialty Conference <a href="https://m.facebook.com/story.php?story_fbid=pfbid0GW6vxSWAnPsC8nnvBzZjmRswTJdKEpDSM77wYmjNFaZKJfB1XQem2JNqNnWN3AhWl&id=100094220689116&mibextid=qC1gEa">#2023MSC</a>**. This conference is a joint initiative of **Taipei Municipal Wanfang Hospital** and **Hargeisa Group Hospital**, and aims to promote knowledge exchange and collaboration among health professionals from different specialties and regions.
 
-The conference will be held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM, at the Conference Hall of **Carro Edeg Hotel** in Hargeisa, Somaliland.
+The conference will be held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM, at the Conference Hall of <a href="https://carroedeghotel.com/about-us/" target="_blank" rel="noopener noreferrer">Carro Edeg Hotel</a> in Hargeisa, Somaliland.
+
+<a href="conference.ics" download>
+  <img src="google-calendar-icon.png" width="30" height="30">
+  Add to Google Calendar
+</a>
 
 
 
