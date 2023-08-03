@@ -3,6 +3,8 @@ title: "2023 COLLABORATING FOR BETTER HEALTH:"
 format: html
 ---
 
+<img src="TMM_logo.svg" style="position: absolute; top: 0; right: 0; width: 5cm; height: 5cm;">
+
 ### A MULTI-SPECIALTY CONFERENCE ###
 
 Welcome to the 2023 MSC website <p id="date"></p>
