@@ -21,6 +21,8 @@ The conference will be held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM,
 
 
 Current Statistics for Registered Participants:
+<img src="<URL or file path of your PNG image>" alt="Description of image">
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE)
 ```
