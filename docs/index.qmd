@@ -53,17 +53,34 @@ msc2023_participants <- read.csv("2023MSC_form_Registration (Responses) - Form R
 # Count the number of occurrences of each specialty
 data_count <- msc2023_participants %>% count(`Specialty.in.Medicine`)
 
+# Add a new column to the data that contains the desired legend labels
+data_count$legend_labels <- paste(data_count$`Specialty.in.Medicine`, data_count$n, sep=": ")
+
 # Create pie chart with percentage labels and counts
-ggplot2::ggplot(data_count, aes(x="", y=n, fill=`Specialty.in.Medicine`)) +
-  geom_bar(width = 1, stat = "identity") +
-  coord_polar("y", start=0) +
-  theme_void() +
-  ggtitle("Specialty in Medicine") +
-  theme(plot.title = element_text(hjust = 0.5)) +
-  scale_fill_discrete(name="Specialty") +
-  geom_text(aes(label=paste0(round(n/sum(n)*100), "% (", n, ")")), position=position_stack(vjust=0.5))
-  
-# Create pie chart using ggplot2 from msc2023_participants dataset directly
+ggplot2::ggplot(data_count, ggplot2::aes(x="", y=n, fill=legend_labels)) +
+  ggplot2::geom_bar(width = 1, stat = "identity") +
+  ggplot2::coord_polar("y", start=0) +
+  ggplot2::theme_void() +
+  ggplot2::ggtitle("Specialty in Medicine") +
+  ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5)) +
+  ggplot2::scale_fill_discrete(name="Specialty") +
+  ggplot2::geom_text(ggplot2::aes(label=n), position=ggplot2::position_stack(vjust=0.5))
+
+
+# spared by tidyverse::
+#ggplot(data_count, aes(x="", y=n, fill=`Specialty.in.Medicine`)) +
+#  geom_bar(width = 1, stat = "identity") +
+#  coord_polar("y", start=0) +
+#  theme_void() +
+#  ggtitle("Specialty in Medicine") +
+#  theme(plot.title = element_text(hjust = 0.5)) +
+#  scale_fill_discrete(name="Specialty") +
+#  geom_text(aes(label=paste0(round(n/sum(n)*100), "% (", n, ")")), position=position_stack(vjust=0.5))
+#
+
+
+
+#xx Create pie chart using ggplot2 from msc2023_participants dataset directly
 #ggplot(msc2023_participants, aes(x="", y=<column containing values>, fill="Specialty in Medicine")) +
 #  geom_bar(width = 1, stat = "identity") +
 #  coord_polar("y", start=0) +
