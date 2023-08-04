@@ -39,8 +39,9 @@ knitr::opts_chunk$set(message = FALSE)
 #install.packages("googlesheets4")
 #install.packages("tidyverse")
 #library(googlesheets4)
-library(tidyverse)
-library(dplyr)
+#library(tidyverse)
+# install.packages("ggplot2")
+library(dplyr, ggplot2)
 
 ## Read data from Google Sheet
 #msc2023_participants <- read_sheet("https://docs.google.com/spreadsheets/d/16w-_RyZ7PgLvNTTeujzUJ7R-okNa30GmQfXK9omp8OI/edit")
@@ -53,7 +54,7 @@ msc2023_participants <- read.csv("2023MSC_form_Registration (Responses) - Form R
 data_count <- msc2023_participants %>% count(`Specialty.in.Medicine`)
 
 # Create pie chart with percentage labels and counts
-ggplot(data_count, aes(x="", y=n, fill=`Specialty.in.Medicine`)) +
+ggplot2::ggplot(data_count, aes(x="", y=n, fill=`Specialty.in.Medicine`)) +
   geom_bar(width = 1, stat = "identity") +
   coord_polar("y", start=0) +
   theme_void() +
