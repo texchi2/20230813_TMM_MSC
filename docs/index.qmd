@@ -63,7 +63,7 @@ ggplot2::ggplot(data_count, ggplot2::aes(x="", y=n, fill=legend_labels)) +
   ggplot2::geom_bar(width = 1, stat = "identity") +
   ggplot2::coord_polar("y", start=0) +
   ggplot2::theme_void() +
-  ggplot2::ggtitle(paste0("Specialty in Medicine [", length(msc2023_participants$Specialty.in.Medicine!="nurse"), " doctors and 2 nurse]", sep="")) +
+  ggplot2::ggtitle(paste0("Specialty in Medicine [", sum(msc2023_participants$Specialty.in.Medicine!="nurse"), " doctors and 2 nurse]", sep="")) +
   ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5)) +
   ggplot2::scale_fill_discrete(name="Specialty") +
   ggplot2::geom_text(ggplot2::aes(label=n), position=ggplot2::position_stack(vjust=0.5))
