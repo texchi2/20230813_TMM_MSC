@@ -17,5 +17,5 @@ format: html
 
 
 
-**Conference <a href="keynotes.html">keynotes</a> of 2023MSC** is coming soon.
+**Conference <a href="keynotes.html">keynotes</a> of 2023MSC** (uploaded).
 
