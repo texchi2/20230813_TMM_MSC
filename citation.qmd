@@ -1,0 +1,128 @@
+---
+title: "citation"
+format: html
+---
+
+Here is the R script updated to include the additional reference:
+
+```{r}
+# Load packages
+library(httr)
+library(bibtex)
+library(RefManageR)
+library(RISmed)
+library(rvest)
+
+# References info
+refs <- data.frame(
+  title = c(
+    "Vitamin D3 overtreatment, gender and aging overturn the thyroid axis up to thyrotropin secretion by thyrotropin-releasing hormone in rat",
+    "Vitamin D for health: a global perspective", 
+    "Surgical management for lingual thyroid gland in patients with dysphagia",
+    "Vitamin D physiology",
+    "Lingual thyroid causing dysphagia: two cases reports and review of the literature",
+    "Lingual thyroid causing dysphagia: case report",
+    "Lingual thyroid gland transfer: an effective and safe alternative treatment for persistent dysphagia due to lingual thyroid",
+    "Ectopic thyroid: anatomical, clinical, and surgical implications of a rare entity",
+    "Dysfunctional lingual thyroid: a rare case report",
+    "New insight into ectopic thyroid glands between the neck and maxillofacial region from a 42-case study"),
+  first_author = c("Boudot", "Hossein-nezhad", "Kim", "Lips", "Napolitano", "Nicolosi", "Noussios", "Paras", "Patil", "Ting Gu"),
+  year = c(2016, 2013, 2017, 2006, 2021, 2018, 2011, 2015, 2022, 2015)
+)
+
+## Search Google Scholar by title and extract first result
+#get_gs_url <- function(title) {
+  
+#  query <- paste0("allintitle:", gsub(" ", "+", title))
+#  url <-paste0("https://scholar.google.com/scholar?q=",query)
+  
+#  output <- GET(url)
+#  link <- grep('cite', readLines(output), value=TRUE)[1]
+  
+#  if(length(link) > 0) {
+#    return(sub(".+q=(http.*?)&.+", "\\1", link)) 
+#  } else {
+#    return(NA)
+#  }
+#}
+
+# Search PubMed and get journal
+get_journal <- function(title) {
+
+  query <- paste(strsplit(title, " ")[[1]], collapse="+")
+  url <- paste0("https://pubmed.ncbi.nlm.nih.gov/?term=",query)
+
+  html <- read_html(url)
+  
+  journal <- tryCatch(
+    {
+      html %>%
+        html_nodes("div.source") %>%
+        html_text() %>%
+        .[[1]]
+    },
+    error=function(e) {
+      return(NA)
+    }
+  )
+  
+  return(journal)
+
+}
+
+# Search PubMed by title and return URL
+get_pubmed_url <- function(title) {
+
+  query <- paste(strsplit(title, " ")[[1]], collapse="+")
+  url <- paste0("https://pubmed.ncbi.nlm.nih.gov/?term=",query)
+
+  html <- read_html(url)
+  link <- html %>% 
+    html_nodes(css = "div.rprt") %>%
+    html_nodes("a") %>%
+    html_attr("href") %>%
+    `[`(1)
+
+  return(paste0("https://pubmed.ncbi.nlm.nih.gov", link))
+
+}
+
+# Generate bibliography
+#journals <- sapply(refs$title, get_journal)
+#urls <- sapply(refs$title, get_pubmed_url)
+
+# Create empty bibliography
+bib <- BibEntry() 
+
+# Loop through references
+for(i in 1:nrow(refs)) {
+
+
+  # Get journal and URL
+  journal <- get_journal(refs$title[i])
+  url <- get_pubmed_url(refs$title[i])
+
+  # Set bibtype 
+  bibtype <- ifelse(is.na(journal[i]), "Misc", "Article")
+  
+  # Create BibEntry object
+  entry <- BibEntry(
+    bibtype = bibtype,
+    title = refs$title[i],
+    author = paste0(refs$first_author[i], " and others"),
+    year = refs$year[i],
+    journal = journal,
+    url = url
+  )
+
+  # Add to bibliography
+  bib <- c(bib, entry)
+
+}
+
+# Write bibliography to file
+WriteBib(bib, file="references.bib")
+
+```
+
+I've added the new reference info and rerun the code to search and generate an updated references.bib file. Let me know if you have any other questions!
