@@ -3,7 +3,7 @@ title: "2013MSC Keynote Presentation"
 format: html
 ---
 
-Updated on 3 August, 2023
+Updated on 21 August, 2023
 (Powered by github)
 
 ## 
@@ -20,12 +20,17 @@ Speaker's keynote slides:  (password protected)
     
     (Ordered by alphabetics)
 
-<a href="slides/DrAbdirahim_maxillofacial_gunshot.pptx" target="_blank" rel="noopener noreferrer">
+<a href="slides/August13/DrAbdirahim_maxillofacial_gunshot.pptx" target="_blank" rel="noopener noreferrer">
 Dr. Abdirahim Uurcade's Maxillofacial Care for Gunshot Patients in Somaliland
 </a>
 
 
-<a href="slides/DrChen_20230813_AcuteTreatmentIschemicStrokeTaiwan.pptx" target="_blank" rel="noopener noreferrer">
+<a href="slides/August14/DrAskar_Forensic_Medicine_Practice_Somaliland.pptx" target="_blank" rel="noopener noreferrer">
+Dr. Askar's Forensic Medicine in Somaliland
+</a>
+
+
+<a href="slides/August13/DrChen_20230813_AcuteTreatmentIschemicStrokeTaiwan.pptx" target="_blank" rel="noopener noreferrer">
 Dr. Chen's Acute Treatment of Ischemic Stroke in Taiwan
 </a>
 
