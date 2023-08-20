@@ -20,7 +20,8 @@ Please review our video records on 2023MSC Youtube:
 
 **<a href="https://youtu.be/hftYXvMX32Q" target="_blank" rel="noopener noreferrer">Day 2 Video</a>** (1:39:36)
 
-and welcome to give us feedback on TMM facebook at <a href="https://shorturl.at/pqvzR" target="_blank" rel="noopener noreferrer">TMM</a>.
+and welcome to give us <a href="feedback.html">feedback</a> or visit TMM facebook at <a href="https://shorturl.at/pqvzR" target="_blank" rel="noopener noreferrer">TMM</a>.
+
 
 
 The conference was held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM, at the Conference Hall of <a href="https://carroedeghotel.com/about-us/" target="_blank" rel="noopener noreferrer">Carro Edeg Hotel</a> in Hargeisa, Somaliland.
@@ -32,9 +33,12 @@ The conference was held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM, at 
 
 
 
+
+<!-- comment it out
 1) To **register** for the conference, please click <a href="https://shorturl.at/bpsvy">here</a>.
 
 2) If you are also a speaker at the conference, please also submit your **CV and abstract** to the Conference Secretariat by email: texchi2@gmail.com
+-->
 
 
 Current Statistics for Registered Participants: <p id="date"></p>
@@ -123,7 +127,7 @@ ggplot2::ggplot(data_count, ggplot2::aes(x="", y=n, fill=legend_labels)) +
 
 
 
-**Conference <a href="handbook.html">Handbook</a> of 2023MSC**
+**Conference <a href="handbook.html">Handbook and Keynotes</a> of 2023MSC**
   
 This website is hosted and maintained by Taiwan Medical Mission, a humanitarian non-profit organization.
 We are dedicated to providing medical aid and empowering healthcare professionals internationally.

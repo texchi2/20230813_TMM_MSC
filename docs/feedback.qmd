@@ -1,0 +1,47 @@
+---
+title: "feedback"
+author: "TMM"
+format: html
+---
+Here is the conference feedback questionnaire rewritten as an interactive R Markdown:
+
+```{r setup, include=FALSE}
+library(shiny)
+```
+
+# 2023MSC Conference Feedback
+
+Thank you for attending the 2023 Multi-Specialty Conference (2023MSC). We appreciate your feedback to improve future conferences.
+
+```{r questions, echo=FALSE}
+radioButtons("role", "I attended as a:", 
+             choices = c("Speaker", "Attendee"),
+             selected = NULL)
+
+textInput("liked", "1. What did you like most about the conference?", "")
+
+textInput("improve", "2. What could we have done better?", "")
+
+radioButtons("attend", "3. Would you attend another conference organized by us in the future?",
+             choices = c("Yes", "No"), 
+             selected = NULL)
+
+textInput("comments", "4. Do you have any other comments or suggestions?", "")
+```
+
+Thank you for your participation and feedback!
+
+```{r submit, echo=FALSE} 
+submitButton("Submit Responses")
+```
+
+This allows participants to select their role, answer text questions, choose radio button options, and submit the form interactively. The responses can be collected and analyzed in R.
+
+Let me know if you would like any changes or have any questions!
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
