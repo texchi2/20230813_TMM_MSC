@@ -7,14 +7,23 @@ format: html
 
 ### A MULTI-SPECIALTY CONFERENCE ###
 
-Please join us at the 2013MSC Conference: Exploring the Latest Advances in Medicine and Science.
+Thanks for joining us at the 2013MSC Conference: Exploring the Latest Advances in Medicine and Science.
 
 
-We provide information about the upcoming conference on **Collaborating for Better Health: A Multi-Specialty Conference <a href="https://m.facebook.com/story.php?story_fbid=pfbid0GW6vxSWAnPsC8nnvBzZjmRswTJdKEpDSM77wYmjNFaZKJfB1XQem2JNqNnWN3AhWl&id=100094220689116&mibextid=qC1gEa">#2023MSC</a>**. This conference is a joint initiative of **Taipei Municipal Wanfang Hospital** and **Hargeisa Group Hospital**, and aims to promote knowledge exchange and collaboration among health professionals from different specialties and regions.
+We provide information about the conference on **Collaborating for Better Health: A Multi-Specialty Conference <a href="https://m.facebook.com/story.php?story_fbid=pfbid0GW6vxSWAnPsC8nnvBzZjmRswTJdKEpDSM77wYmjNFaZKJfB1XQem2JNqNnWN3AhWl&id=100094220689116&mibextid=qC1gEa">#2023MSC</a>**. This conference is a joint initiative of **Taipei Municipal Wanfang Hospital** and **Hargeisa Group Hospital**, and aims to promote knowledge exchange and collaboration among health professionals from different specialties and regions.
 
 The conference of specialists from Taiwan and Somaliland is a significant milestone in the continued collaboration between the two countries to improve healthcare development and the well-being of Somaliland’s population. The specialists from both countries include general surgeons, internal medicine physicians, cardiologist, thoracic doctor, orthopedic doctors, emergency doctors, nephrologists, neurologists, neurosurgeons, otolaryngologists, oral and maxillofacial surgeons, pathologists, dentists, and forensic medicine specialists. Their combined expertise and knowledge will contribute to the advancement of healthcare in Somaliland.
 
-The conference will be held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM, at the Conference Hall of <a href="https://carroedeghotel.com/about-us/" target="_blank" rel="noopener noreferrer">Carro Edeg Hotel</a> in Hargeisa, Somaliland.
+Please review our video records on 2023MSC Youtube:
+
+**<a href="https://youtu.be/MrzUAOi-hk8" target="_blank" rel="noopener noreferrer">Day 1 Video</a>** (0:44:10)
+
+**<a href="https://youtu.be/hftYXvMX32Q" target="_blank" rel="noopener noreferrer">Day 2 Video</a>** (1:39:36)
+
+and welcome to give us feedback on TMM facebook at <a href="https://shorturl.at/pqvzR" target="_blank" rel="noopener noreferrer">TMM</a>.
+
+
+The conference was held on **August 13-14, 2023**, from 9:00 AM to 12:00 PM, at the Conference Hall of <a href="https://carroedeghotel.com/about-us/" target="_blank" rel="noopener noreferrer">Carro Edeg Hotel</a> in Hargeisa, Somaliland.
 
 <a href="conference.ics" download>
   <img src="google-calendar-icon.png" width="30" height="30">
@@ -121,7 +130,7 @@ We are dedicated to providing medical aid and empowering healthcare professional
 
 Copyright ***Taiwan Medical Mission in the Republic of Somaliland*** ©2022-2023. All rights reserved.
 
-This site was last updated on 10 August, 2023.
+This site was last updated on 20 August, 2023.
 (It is built and hosted on ***GitHub Pages***, allowing collaborative development and version control of the content and code.)
 
 <script>
