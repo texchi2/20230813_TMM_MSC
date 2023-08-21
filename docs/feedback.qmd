@@ -3,7 +3,8 @@ title: "feedback"
 author: "TMM"
 format: html
 ---
-Here is the conference feedback questionnaire rewritten as an interactive R Markdown:
+Here is the conference feedback questionnaire.
+<!--rewritten as an interactive R Markdown:-->
 
 ```{r setup, include=FALSE}
 library(shiny)
@@ -15,18 +16,25 @@ Thank you for attending the 2023 Multi-Specialty Conference (2023MSC). We apprec
 
 ```{r questions, echo=FALSE}
 radioButtons("role", "I attended as a:", 
-             choices = c("Speaker", "Attendee"),
+             choices = c("Attendee", "Speaker"),
              selected = NULL)
 
 textInput("liked", "1. What did you like most about the conference?", "")
 
-textInput("improve", "2. What could we have done better?", "")
+
+radioButtons("satisfy", "2. How satisfied were you with the conference?",
+           choices = c("Very satisfied", 
+                       "Satisfied",
+                       "Neutral",
+                       "Dissatisfied",
+                       "Very dissatisfied"),
+           selected = NULL)
 
 radioButtons("attend", "3. Would you attend another conference organized by us in the future?",
              choices = c("Yes", "No"), 
              selected = NULL)
 
-textInput("comments", "4. Do you have any other comments or suggestions?", "")
+textInput("comments", "4. Do you have any comments or suggestions?", "")
 ```
 
 Thank you for your participation and feedback!
@@ -35,9 +43,8 @@ Thank you for your participation and feedback!
 submitButton("Submit Responses")
 ```
 
-This allows participants to select their role, answer text questions, choose radio button options, and submit the form interactively. The responses can be collected and analyzed in R.
+<!--This allows participants to select their role, answer text questions, choose radio button options, and submit the form interactively. The responses can be collected and analyzed in R.
 
-Let me know if you would like any changes or have any questions!
 
 ```{r}
 #| echo: false
@@ -45,3 +52,55 @@ Let me know if you would like any changes or have any questions!
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+-->
+
+<!--Here is one way to process the submitted questionnaire data in R:
+
+First, capture the form inputs by assigning them to variables: -->
+
+```{r results = "hide"}
+role <- input$role
+satisfy <- input$satisfy
+#liked <- input$liked  
+improve <- input$improve
+attend <- input$attend
+comments <- input$comments
+```
+
+<!--Then on form submit, you can process the data:-->
+
+```{r onSubmit}
+observeEvent(input$submit, {
+
+  # Log data 
+  print(role)
+  print(satisfy)
+  print(comments)
+
+  # Save to dataframe
+  df <- data.frame(
+    role = role,
+    satisfy = satisfy,
+#    liked = liked,
+    improve = improve, 
+    attend = attend,
+    comments = comments
+  )
+  
+  # Export to csv
+  write.csv(df, "responses.csv", row.names=FALSE)
+  
+})
+```
+
+<!--This will:
+
+- Print the values to the R console 
+- Save them to a dataframe 
+- Write the dataframe out to a CSV file
+
+You can then load and analyze the CSV in R further.
+
+Let me know if you have any other questions!
+
+-->

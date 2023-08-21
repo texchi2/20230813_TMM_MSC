@@ -67,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Here is the conference feedback questionnaire rewritten as an interactive R Markdown:</p>
+<p>Here is the conference feedback questionnaire. <!--rewritten as an interactive R Markdown:--></p>
 <section id="msc-conference-feedback" class="level1">
 <h1>2023MSC Conference Feedback</h1>
 <p>Thank you for attending the 2023 Multi-Specialty Conference (2023MSC). We appreciate your feedback to improve future conferences.</p>
@@ -78,14 +78,14 @@ ul.task-list li input[type="checkbox"] {
 <div class="shiny-options-group">
 <div class="radio">
 <label>
-<input type="radio" name="role" value="Speaker" checked="checked">
-<span>Speaker</span>
+<input type="radio" name="role" value="Attendee" checked="checked">
+<span>Attendee</span>
 </label>
 </div>
 <div class="radio">
 <label>
-<input type="radio" name="role" value="Attendee">
-<span>Attendee</span>
+<input type="radio" name="role" value="Speaker">
+<span>Speaker</span>
 </label>
 </div>
 </div>
@@ -98,9 +98,40 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="cell-output-display">
-<div class="form-group shiny-input-container">
-<label class="control-label" id="improve-label" for="improve">2. What could we have done better?</label>
-<input id="improve" type="text" class="shiny-input-text form-control" value="">
+<div id="satisfy" class="form-group shiny-input-radiogroup shiny-input-container" role="radiogroup" aria-labelledby="satisfy-label">
+<label class="control-label" id="satisfy-label" for="satisfy">2. How satisfied were you with the conference?</label>
+<div class="shiny-options-group">
+<div class="radio">
+<label>
+<input type="radio" name="satisfy" value="Very satisfied" checked="checked">
+<span>Very satisfied</span>
+</label>
+</div>
+<div class="radio">
+<label>
+<input type="radio" name="satisfy" value="Satisfied">
+<span>Satisfied</span>
+</label>
+</div>
+<div class="radio">
+<label>
+<input type="radio" name="satisfy" value="Neutral">
+<span>Neutral</span>
+</label>
+</div>
+<div class="radio">
+<label>
+<input type="radio" name="satisfy" value="Dissatisfied">
+<span>Dissatisfied</span>
+</label>
+</div>
+<div class="radio">
+<label>
+<input type="radio" name="satisfy" value="Very dissatisfied">
+<span>Very dissatisfied</span>
+</label>
+</div>
+</div>
 </div>
 </div>
 <div class="cell-output-display">
@@ -124,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell-output-display">
 <div class="form-group shiny-input-container">
-<label class="control-label" id="comments-label" for="comments">4. Do you have any other comments or suggestions?</label>
+<label class="control-label" id="comments-label" for="comments">4. Do you have any comments or suggestions?</label>
 <input id="comments" type="text" class="shiny-input-text form-control" value="">
 </div>
 </div>
@@ -137,14 +168,21 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>This allows participants to select their role, answer text questions, choose radio button options, and submit the form interactively. The responses can be collected and analyzed in R.</p>
-<p>Let me know if you would like any changes or have any questions!</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+<!--This allows participants to select their role, answer text questions, choose radio button options, and submit the form interactively. The responses can be collected and analyzed in R.
+
+
+
+::: {.cell}
+::: {.cell-output .cell-output-stdout}
+```
+[1] 4
+```
+:::
+:::
+
+
+The `echo: false` option disables the printing of code (only output is displayed).
+-->
 </section>
 
 </main>
